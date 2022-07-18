@@ -4,9 +4,6 @@ import TodoInsert from "./components/TodoInsert";
 import TodoList from "./components/TodoList";
 
 
-
-
-
 const App = () => {
   const [todos, setTodos] = useState([]);
 
@@ -25,7 +22,7 @@ const App = () => {
     setTodos(
       todos.map(todo =>
         todo.id === id ? {...todo, checked: !todo.checked} : todo,
-      ),
+        ),
     );
   };
 

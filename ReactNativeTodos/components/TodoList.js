@@ -9,10 +9,10 @@ const TodoList = ({todos, onRemove, onToggle}) => {
         <ScrollView contentContainerStyle={styles.listContainer}>
             {todos.map(todo => (
                 <TodoListItem
-                key={todo.id}
-                {...todo}
-                onRemove={onRemove}
-                onToggle={onToggle}
+                    key={todo.id}
+                    {...todo}
+                    onRemove={onRemove}
+                    onToggle={onToggle}
                 />
             ))}
             
